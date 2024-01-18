@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #c32020;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(62, 160, 230);
+    color: rgb(228, 22, 22);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Add CSS styles for the sections in styles.css */
+
+/* About Us Section */
+#about {
+    background-color: rgba(162, 129, 129, 0.449); /* Set your desired color for About Us */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* What We Offer Section */
+#whatweoffer {
+    background-color: #d8e6f3; /* Set your desired color for What We Offer */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Community Section */
+#Community {
+    background-color: #ffe0b2; /* Set your desired color for Community */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Us Section */
+#contact {
+    background-color: #c8e6c9; /* Set your desired color for Contact Us */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Additional styles if needed */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* This ensures that the image scales proportionally */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 1px;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333333;
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(5, 18, 5);
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(62, 160, 230); ;
+    color:  rgb(228, 22, 22) ;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
