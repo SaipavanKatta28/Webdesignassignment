@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 1200px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	  table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+	  .error {
+    color: red;
+       }
+
+  </style>
+  <script src="formValidation.js" defer></script>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feeback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form id="feedbackForm" method="post" onsubmit="return submitForm(event)" novalidate>
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<br><br>
+			<label for="firstName">First Name*:</label>
+	        <input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+			<span id="firstNameError" class="error"></span>
+			<br><br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
+			<span id="lastNameError" class="error"></span>
+			<br><br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="email" name="emailId" id="emailId" placeholder="yourname@domain.com" required  />
+			<span id="emailIdError" class="error"></span>
+			<br><br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required  />
+			<span id="phoneNumberError" class="error"></span>
+			<br><br>
+
+			<label for="streetAddress1">Street Address 1*:</label>
+            <input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" required />
+			<span id="streetAddress1Error" class="error"></span>
+            <br><br>
+
+			<label for="streetAddress2">Street Address 2:</label>
+            <input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" required />
+			<span id="streetAddress2Error" class="error"></span>
+            <br><br>
+
+
+            <label for="zipcode">ZipCode*:</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required />
+			<span id="zipcodeError" class="error"></span>
+			<br><br>
+             
+            <label for="how did you hear">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+            <input type='checkbox' name="source" value="yelp" /> Yelp 
+			<br><br> 
+
+		<label for="drinks">Drinks*:</label>
+        <select name="drinks" id="drinks" onchange="dropDown()" required>
+
+          <option disabled selected value>Select a drink</option>
+          <option value="Hot Black Tea">Hot Black Tea</option>
+          <option value="Cold Coffee">Cold Coffee</option>
+          <option value="Lemon Iced Tea">Lemon Iced Tea</option>
+          <option value="Espresso">Espresso</option>
+          <option value="Latte">Latte</option>
+        </select>
+
+        <br /><br />
+        <div id="dropdown1" style="display: none">
+          <input type="checkbox" id="drink1" name="drink" value="A" onchange="ondropDown(this)" />
+          <label for="drink1"> Hot Black Tea-Large <br>($1 Extra)</label><br />
+        </div>
+
+        <div id="dropdown2" style="display: none">
+          <input type="checkbox" id="drink2" name="drink" value="B" onchange="ondropDown(this)" />
+          <label for="drink2"> Cold Coffee-Large <br>($1 Extra)</label><br />
+        </div>
+
+        <div id="dropdown3" style="display: none">
+          <input type="checkbox" id="drink3" name="drink" value="C" onchange="ondropDown(this)" />
+          <label for="drink3"> Lemon Iced Tea-Large <br>($1 Extra)</label><br />
+        </div>
+
+        <div id="dropdown4" style="display: none">
+          <input type="checkbox" id="drink4" name="drink" value="D" onchange="ondropDown(this)" />
+          <label for="drink4"> Espresso-Large <br>($1 Extra)</label><br />
+        </div>
+
+        <div id="dropdown5" style="display: none">
+          <input type="checkbox" id="drink5" name="drink" value="E" onchange="ondropDown(this)" />
+          <label for="drink5"> Latte-Large <br>($1 Extra)</label><br />
+        </div>
+
+
+        <div id="additionalInfo" style="display: none">
+          <br /><br />
+          <label for="adInfo">Additional customisations*:</label>
+          <input type="text" name="adInfo" id="adInfo" placeholder="Description" required/>
+          <br /><br />
+          <div id="error_additionalInfo" style="display: none; color: red">
+            This field cannot be blank. Please enter customizations
+          </div>
+          <br />
+        </div>
+        <br />
+
+
+             
+		<label for="comments">Comments*:</label>
+		<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required maxlength="200"></textarea>
+		<span id="commentsError" class="error"></span>
+		<br><br>
+		<input type="Submit" id="submitBtn" disabled>
+		<input type="Reset">
+		<br><br>
+		 </form>
+		<table id="tableData" style="display: none">
+			<tbody>
+			  <tr>
+				<th>Title</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email Id</th>
+				<th>Phone Number</th>
+				<th>Street Address 1</th>
+				<th>Street Address 2</th>
+				<th>ZipCode</th>
+				<th>How did you Hear</th>
+				<th>Drinks</th>
+				<th>Any additional customisations</th>
+				<th>Comments</th>
+			  </tr>
+			</tbody>
+		</table>
+	 </main>
+ </div>
+
+ <script>
+ 
+ </script>
+
+ </body>
+</html>
