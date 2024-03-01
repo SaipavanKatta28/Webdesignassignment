@@ -1,0 +1,88 @@
+
+body{
+    background-color: black;
+    margin: 0;
+    font-family: $font-style;
+}
+
+//nesting
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height:100vh;
+    
+    header{
+    
+      text-align: center;
+      color: white; 
+      font-family: $font-style; 
+    
+  }
+    
+}
+  
+@media (max-width: 692px) {
+    .login-page form {
+      width: 60%;
+    }
+  }
+  @media (max-width: 452px) {
+    .login-page form {
+      width: 70%;
+      padding: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .login-page {
+      width: 100%;
+    }
+    .login-page form {
+        width: 70%;
+      }
+  }
+.login-page form {
+    width: 40%;
+    box-shadow: 1px 0 10px 15px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    background-color: rgb(33, 31, 31);
+    //background-color: $fourth-color;
+
+  }
+  .login-page form button {
+    @extend %button;
+    background-color: $tertiary-color;
+    font-size: 18px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .login-page form button:hover {
+    background-color: $fifth-color;
+  }
+  .login-page form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #ecf0f1;
+    padding: 10px;
+    line-height: 2;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+//   .header{
+    
+//     text-align: center;
+//     color: white; 
+//     font-family: 'Kumbh Sans', sans-serif;
+  
+// }
+  
+
+ 
