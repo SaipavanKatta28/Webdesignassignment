@@ -1,0 +1,29 @@
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.container {
+    width: 50%;
+    background-color: rgba(41, 128, 175, 0.956);
+    
+}
+
+input[type="email"], input[type="username"], input[type="password"] {
+    width: 70%;
+
+}
+
+button {
+    padding: 9px 9px;
+    margin-right: 70px;
+    margin-left: 70px;
+    background-color: #001eff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b30c;
+}

@@ -1,0 +1,33 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    background-color:darkgray;
+   
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #startBtn:hover {
+    background-color: rgb(27, 135, 137);
+    color:rgb(199, 197, 207);
+  }
+
+  #stopBtn:hover {
+    background-color: rgb(233, 8, 8);
+    color:rgb(199, 197, 207);
+  }
+
+  #resetBtn:hover {
+    background-color: rgb(65, 27, 137);
+    color:rgb(199, 197, 207);
+  }
+  
+  #timeDisplay {
+    font-size: 36px;
+    margin: 20px;
+  }
+  
